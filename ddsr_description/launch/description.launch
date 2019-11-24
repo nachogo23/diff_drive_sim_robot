@@ -10,7 +10,7 @@
 
 	<!-- Convert xacro to urdf and set robot_description parameter in the parameter server -->
 	<param  name="$(arg namespace)/robot_description"
-		command="$(find xacro)/xacro $(find ddsr_description)/urdf/ddsr.xacro" />
+		command="$(find xacro)/xacro $(find ddsr_description)/urdf/ddsr_partial.xacro" />
 
 	<!-- Run joint state publisher (Gets robot_description from parameter server)-->
 	<group if="$(arg run_joint_state_publisher)">
